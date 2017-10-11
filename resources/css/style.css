@@ -14,7 +14,8 @@ header {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   display: flex;
-  align: left; 
+  justify-content: flex-start;
+  align-items: center;
 }
 
 header img {
@@ -23,5 +24,29 @@ header img {
   padding-right: 1rem;
 }
  header p {
-
+   font-size: 1rem;
  }
+
+.banner {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+}
+
+.banner-container {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.banner-title {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.banner-text {
+  font-size: 2rem;
+}
