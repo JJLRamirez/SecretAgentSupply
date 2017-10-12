@@ -4,6 +4,10 @@ html {
   color: white;
 }
 
+body {
+  width: 100%;
+}
+
 .container {
   width: 960px;
 }
@@ -55,6 +59,11 @@ nav {
   padding: 0.75rem 0;
   display: flex;
   justify-content: space-around;
+}
+
+.sub-nav {
+  display: none;
+  text-align: center;
 }
 
 .image-section {
@@ -109,4 +118,73 @@ footer {
   background-color: black;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .image-container {
+    width: 47%;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  nav p {
+    display: none;
+  }
+
+  .sub-nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #watch {
+    display: none;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner-container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 10rem;
+  }
+
+  .banner-title {
+    font-size: 0.77rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+
+  }
+
+  .image-section {
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 90%;
+  }
+
+  .bottom-container {
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+
+  .bottom-sub-container {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+
+  footer  div {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
